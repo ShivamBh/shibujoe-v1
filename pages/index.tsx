@@ -1,12 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-
-import styles from "../styles/Home.module.css";
-import { useEffect, useRef } from "react";
 import Banner from "../components/Banner";
 import Introduction from "../components/Sections/Introduction";
+import ProjectSection from "../components/Sections/Project";
 
 export default function Home() {
   return (
@@ -18,6 +13,9 @@ export default function Home() {
       </Head>
       <Banner />
       <Introduction />
+      <ProjectSection />
+
+      {/* <ProjectSection /> */}
     </div>
   );
 }
