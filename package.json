@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
+    "@builder.io/partytown": "^0.7.2",
     "@next/bundle-analyzer": "^13.0.4",
     "@next/env": "^13.0.4",
     "@size-limit/preset-app": "^8.1.0",
@@ -40,7 +41,9 @@
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "autoprefixer": "^10.4.12",
+    "critters": "^0.0.16",
     "cross-env": "^7.0.3",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
     "husky": "^8.0.2",
