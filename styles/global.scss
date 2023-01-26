@@ -18,11 +18,12 @@
 }
 
 html {
-  font-weight: bolder;
-  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-base);
   background-color: var(--white);
   color: var(--black);
   scrollbar-width: thin;
+  font-weight: 200;
 
   &.nav {
     overflow: hidden;

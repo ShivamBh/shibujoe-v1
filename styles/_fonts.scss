@@ -1,29 +1,27 @@
-// HERE WE DEFINE FONT-FACES, I.E.:
-// @font-face {
-//   font-family: 'Attila Sans Uniform';
-//   src: url('/fonts/Attila/AttilaSansUniform-Black.woff2') format('woff2'),
-//     url('/fonts/Attila/AttilaSansUniform-Black.woff') format('woff');
-//   font-display: swap;
-//   font-weight: 900;
-// }
+@font-face {
+  font-family: "JoeFont";
+  src: url("/fonts/PPMori-Regular.otf");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: "JoeReg";
-//   src: url("../public/fonts/PPMori-Regular.otf");
-//   font-weight: normal;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "JoeFont";
+  src: url("/fonts/PPMori-SemiBold.otf");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: "JoeSemi";
-//   src: url("../public/fonts/PPMori-SemiBold.otf");
-//   font-weight: bold;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "JoeFont";
+  src: url("/fonts/PPMori-Extralight.otf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: "JoeLight";
-//   src: url("../public/fonts/PPMori-Extralight.otf");
-//   font-weight: lighter;
-//   font-display: swap;
-// }
+:root {
+  --font-base: "JoeFont";
+}
