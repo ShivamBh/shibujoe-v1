@@ -1,14 +1,18 @@
-function Header() {
+import cn from "clsx";
+import s from "./navbar.module.scss";
+
+function Navbar() {
   return (
     <>
-      <div className="navbar-main text-slate-50">
-        <div className="navbar-wrapper flex justify-between text-xl align-top">
-          <div className="navbar-branding ">
-            <p className="logo-text text-8xl">SHIBUJOE</p>
+      <div className={cn(s.navbar)}>
+        <div className={cn(s["navbar-wrapper"])}>
+          <div className={cn(s.branding)}>
+            <p className="navbar-text">Made for humans.</p>
           </div>
-          <div className="navbar-menu flex flex-col justify-start text-right">
-            <p className="menu-text">INDEX</p>
-            <p className="menu-text">ABOUT</p>
+          <div className={cn(s.menu)}>
+            <p>Work</p>
+            <p>About</p>
+            <p>Contact</p>
           </div>
         </div>
       </div>
@@ -16,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

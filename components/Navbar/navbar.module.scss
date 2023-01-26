@@ -1,0 +1,28 @@
+.navbar {
+  border-bottom: 1px solid black;
+
+  & .navbar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include desktop {
+    margin: desktop-vw(40px);
+  }
+}
+
+.branding {
+  font-size: 1.8vw;
+}
+
+.menu {
+  display: flex;
+  width: 24%;
+  justify-content: space-between;
+  align-items: center;
+
+  & p {
+    font-size: 1.8vw;
+  }
+}
