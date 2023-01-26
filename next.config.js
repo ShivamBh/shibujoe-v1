@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-
+const path = require("path");
 const runtimeCaching = require("next-pwa/cache");
 const withPWA = require("next-pwa")({
   dest: "public",
@@ -22,15 +22,15 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     optimizeCss: true,
-    browsersListForSwc: true,
     legacyBrowsers: false,
     nextScriptWorkers: true,
-    images: {
-      allowFutureImages: true,
-    },
   },
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development",
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+    prependData: `@import 'styles/_functions';`,
   },
   images: {
     // ADD in case you need to import SVGs in next/image component
